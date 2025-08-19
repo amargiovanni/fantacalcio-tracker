@@ -1057,6 +1057,100 @@ select.form-control {
   padding: var(--space-20);
 }
 
+/* Autocomplete styles */
+.autocomplete-container {
+  position: relative;
+}
+
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: none;
+  border-radius: 0 0 var(--radius-base) var(--radius-base);
+  box-shadow: var(--shadow-lg);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.autocomplete-dropdown.hidden {
+  display: none;
+}
+
+.autocomplete-item {
+  padding: var(--space-12) var(--space-16);
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-card-border-inner);
+  transition: background-color var(--duration-fast) var(--ease-standard);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.autocomplete-item:last-child {
+  border-bottom: none;
+}
+
+.autocomplete-item:hover,
+.autocomplete-item.highlighted {
+  background: var(--color-secondary);
+}
+
+.autocomplete-item-icon {
+  font-size: var(--font-size-lg);
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.autocomplete-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.autocomplete-item-name {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin: 0 0 var(--space-2) 0;
+  font-size: var(--font-size-sm);
+}
+
+.autocomplete-item-details {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.autocomplete-item-price {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+}
+
+.autocomplete-highlight {
+  background: rgba(var(--color-primary-rgb, 33, 128, 141), 0.2);
+  font-weight: var(--font-weight-semibold);
+}
+
+.autocomplete-no-results {
+  padding: var(--space-16);
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  font-size: var(--font-size-sm);
+}
+
+/* Role icons */
+.role-icon-portiere::before { content: "🥅"; }
+.role-icon-difensore::before { content: "🛡️"; }
+.role-icon-centrocampista::before { content: "⚽"; }
+.role-icon-attaccante::before { content: "🎯"; }
+
 /* Modal styles */
 .modal {
   position: fixed;
@@ -1144,6 +1238,20 @@ select.form-control {
   .modal-actions .btn {
     width: 100%;
   }
+
+  .autocomplete-dropdown {
+    max-height: 150px;
+  }
+
+  .autocomplete-item {
+    padding: var(--space-10) var(--space-12);
+  }
+
+  .autocomplete-item-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
 }
 
 /* Age indicators */
@@ -1171,6 +1279,11 @@ select.form-control {
   color: var(--color-info);
 }
 
+.age-custom {
+  background: rgba(var(--color-primary-rgb, 33, 128, 141), 0.1);
+  color: var(--color-primary);
+}
+
 /* Touch improvements */
 @media (hover: none) and (pointer: coarse) {
   .player-card:hover {
@@ -1184,5 +1297,9 @@ select.form-control {
   
   .tab-btn.active:hover {
     background: var(--color-primary);
+  }
+
+  .autocomplete-item:hover {
+    background: var(--color-surface);
   }
 }

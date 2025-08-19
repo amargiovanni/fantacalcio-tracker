@@ -80,8 +80,15 @@
 
         <!-- Add custom player section -->
         <section class="add-custom">
-            <h2>Aggiungi Giocatore Custom</h2>
+            <h2>Aggiungi Giocatore</h2>
             <form id="customPlayerForm" class="custom-form">
+                <div class="form-group">
+                    <label for="playerSearch" class="form-label">Cerca Giocatore:</label>
+                    <div class="autocomplete-container">
+                        <input type="text" id="playerSearch" class="form-control" placeholder="Inizia a digitare il nome o la squadra..." autocomplete="off">
+                        <div id="autocompleteDropdown" class="autocomplete-dropdown hidden"></div>
+                    </div>
+                </div>
                 <div class="form-group">
                     <label for="customName" class="form-label">Nome:</label>
                     <input type="text" id="customName" class="form-control" placeholder="Nome giocatore" required>
@@ -103,6 +110,10 @@
                         <option value="midfielders">Centrocampista</option>
                         <option value="attackers">Attaccante</option>
                     </select>
+                </div>
+                <div class="form-group">
+                    <label for="customFVM" class="form-label">FVM:</label>
+                    <input type="number" id="customFVM" class="form-control" placeholder="FVM (opzionale)" min="0">
                 </div>
                 <button type="submit" class="btn btn--primary btn--full-width">Aggiungi Giocatore</button>
             </form>
