@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantacalcio - La Mia Rosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header fisso con budget -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Fantacalcio</h1>
+            <div class="budget-info">
+                <div class="budget-item">
+                    <span class="budget-label">Budget:</span>
+                    <span id="remainingBudget" class="budget-value">1000</span>
+                </div>
+                <div class="budget-item">
+                    <span class="budget-label">Spesi:</span>
+                    <span id="spentBudget" class="budget-value">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <!-- Navigation tabs -->
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="portieri">Portieri</button>
+            <button class="tab-btn" data-tab="difensori">Difensori</button>
+            <button class="tab-btn" data-tab="centrocampisti">Centrocampisti</button>
+            <button class="tab-btn" data-tab="attaccanti">Attaccanti</button>
+        </nav>
+
+        <!-- Role counters -->
+        <div class="role-counters">
+            <div class="counter">
+                <span class="role-name">P:</span>
+                <span id="goalkeepersCount">0/3</span>
+            </div>
+            <div class="counter">
+                <span class="role-name">D:</span>
+                <span id="defendersCount">0/8</span>
+            </div>
+            <div class="counter">
+                <span class="role-name">C:</span>
+                <span id="midfieldersCount">0/8</span>
+            </div>
+            <div class="counter">
+                <span class="role-name">A:</span>
+                <span id="attackersCount">0/6</span>
+            </div>
+        </div>
+
+        <!-- Player lists -->
+        <div class="tab-content">
+            <div id="portieri" class="tab-panel active">
+                <div class="players-grid" id="goalkeepers-list"></div>
+            </div>
+            <div id="difensori" class="tab-panel">
+                <div class="players-grid" id="defenders-list"></div>
+            </div>
+            <div id="centrocampisti" class="tab-panel">
+                <div class="players-grid" id="midfielders-list"></div>
+            </div>
+            <div id="attaccanti" class="tab-panel">
+                <div class="players-grid" id="attackers-list"></div>
+            </div>
+        </div>
+
+        <!-- La Mia Rosa section -->
+        <section class="my-team">
+            <h2>La Mia Rosa</h2>
+            <div id="selectedPlayers" class="selected-players">
+                <p class="empty-team">Nessun giocatore selezionato</p>
+            </div>
+        </section>
+
+        <!-- Add custom player section -->
+        <section class="add-custom">
+            <h2>Aggiungi Giocatore Custom</h2>
+            <form id="customPlayerForm" class="custom-form">
+                <div class="form-group">
+                    <label for="customName" class="form-label">Nome:</label>
+                    <input type="text" id="customName" class="form-control" placeholder="Nome giocatore" required>
+                </div>
+                <div class="form-group">
+                    <label for="customTeam" class="form-label">Squadra:</label>
+                    <input type="text" id="customTeam" class="form-control" placeholder="Squadra" required>
+                </div>
+                <div class="form-group">
+                    <label for="customPrice" class="form-label">Prezzo:</label>
+                    <input type="number" id="customPrice" class="form-control" placeholder="Prezzo" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="customRole" class="form-label">Ruolo:</label>
+                    <select id="customRole" class="form-control" required>
+                        <option value="">Seleziona ruolo</option>
+                        <option value="goalkeepers">Portiere</option>
+                        <option value="defenders">Difensore</option>
+                        <option value="midfielders">Centrocampista</option>
+                        <option value="attackers">Attaccante</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">Aggiungi Giocatore</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal per conferma rimozione -->
+    <div id="confirmModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Conferma rimozione</h3>
+            <p id="confirmMessage">Sei sicuro di voler rimuovere questo giocatore?</p>
+            <div class="modal-actions">
+                <button id="cancelBtn" class="btn btn--outline">Annulla</button>
+                <button id="confirmBtn" class="btn btn--primary">Conferma</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+Posizione,Rank,Nome,Squadra,Prezzo,FVM,Età_Categoria,Value_Score,Ruolo_Specifico
+Portiere,1,Skorupski,Bologna,10,49,veteran,5.39,Por
+Portiere,2,Mandas,Lazio,3,12,young,4.8,Por
+Portiere,3,Provedel,Lazio,12,54,mature,4.5,Por
+Portiere,4,Israel,Torino,9,30,young,4.0,Por
+Portiere,5,Butez,Como,10,32,young,3.84,Por
+Portiere,6,Leali,Genoa,8,28,mature,3.5,Por
+Difensore,1,Hien,Atalanta,11,40,young,4.36,Dc
+Difensore,2,Scalvini,Atalanta,8,24,young,3.6,Dc
+Difensore,3,Delprato,Parma,8,24,young,3.6,B;Dd;E
+Difensore,4,Marusic,Lazio,8,26,veteran,3.58,Dd;Ds;E
+Difensore,5,Carlos Augusto,Inter,10,35,mature,3.5,B;Ds;E
+Difensore,6,Solet,Udinese,11,30,young,3.27,Dc
+Difensore,7,Valeri,Parma,10,27,young,3.24,Ds;E
+Difensore,8,Martin,Genoa,10,32,mature,3.2,Ds;E
+Difensore,9,Miranda J.,Bologna,9,24,young,3.2,Ds;E
+Difensore,10,Biraghi,Torino,8,23,veteran,3.16,Ds;E
+Difensore,11,Lucumì,Bologna,8,21,young,3.15,Dc
+Difensore,12,Holm,Bologna,8,21,young,3.15,Dd;E
+Difensore,13,Olivera,Napoli,10,26,young,3.12,Ds;E
+Difensore,14,Vasquez,Genoa,9,23,young,3.07,Ds;Dc
+Difensore,15,Beukema,Napoli,10,25,young,3.0,Dc
+Difensore,16,De Winter,Milan,8,19,young,2.85,Dd;Dc
+Centrocampista,1,Ederson D.S.,Atalanta,15,64,young,5.12,M;C
+Centrocampista,2,Fofana Y.,Milan,11,40,young,4.36,M;C
+Centrocampista,3,Tramoni M.,Pisa,12,42,young,4.2,W;T
+Centrocampista,4,Isaksen,Lazio,14,48,young,4.11,W;A
+Centrocampista,5,Gronbaek,Genoa,12,40,young,4.0,W;T
+Centrocampista,6,Saelemaekers,Milan,12,40,young,4.0,E;W
+Centrocampista,7,Fazzini,Fiorentina,11,36,young,3.93,C;T
+Centrocampista,8,Konè M.,Roma,14,45,young,3.86,M;C
+Centrocampista,9,Jashari,Milan,13,39,young,3.6,C
+Centrocampista,10,Da Cunha,Como,12,36,young,3.6,C;W;T
+Centrocampista,11,Samardzic,Atalanta,12,35,young,3.5,T
+Centrocampista,12,Dele-Bashiru,Lazio,11,32,young,3.49,C;T
+Centrocampista,13,Bernabè,Parma,11,32,young,3.49,C
+Centrocampista,14,Carboni V.,Genoa,11,29,young,3.16,T;A
+Centrocampista,15,Neres,Napoli,13,41,mature,3.15,W;A
+Centrocampista,16,Vlasic,Torino,15,46,mature,3.07,T
+Attaccante,1,Lucca,Napoli,15,121,young,9.68,Pc
+Attaccante,2,Ferguson E.,Roma,19,137,young,8.65,Pc
+Attaccante,3,Krstovic,Lecce,20,138,young,8.28,Pc
+Attaccante,4,Immobile,Bologna,19,140,veteran,8.11,Pc
+Attaccante,5,Castro S.,Bologna,19,128,young,8.08,Pc
+Attaccante,6,Soulè,Roma,20,125,young,7.5,A
+Attaccante,7,Scamacca,Atalanta,19,114,young,7.2,Pc
+Attaccante,8,Dia,Lazio,20,141,mature,7.05,Pc
+Attaccante,9,Diao,Como,17,99,young,6.99,W;A
+Attaccante,10,Piccoli,Cagliari,17,90,young,6.35,Pc
+Attaccante,11,Pellegrino M.,Parma,13,67,young,6.18,Pc
+Attaccante,12,Lang,Napoli,19,97,young,6.13,A
